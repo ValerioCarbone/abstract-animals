@@ -25,5 +25,9 @@ public class Main {
         curioso.mangia();
         curioso.verso();
         curioso.dormi();
+
     }
+
 }
+
+
