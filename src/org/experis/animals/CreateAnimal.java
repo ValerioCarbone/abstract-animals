@@ -12,17 +12,21 @@ public class CreateAnimal {
         faiNuotare(flipper);
 
 
-
     }
-    public static void faiVolare(Animale animal){
-        if(animal instanceof CheVola) {
+
+    public static void faiVolare(Animale animal) {
+        try {
             ((CheVola) animal).vola();
+        } catch (ClassCastException e) {
+            e.printStackTrace();
         }
     }
 
     public static void faiNuotare(Animale animal) {
-        if (animal instanceof CheNuota) {
+        try {
             ((CheNuota) animal).nuota();
+        } catch (ClassCastException e) {
+            e.printStackTrace();
         }
     }
 
